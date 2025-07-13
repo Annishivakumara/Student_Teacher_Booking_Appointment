@@ -12,6 +12,7 @@ body {
     background-repeat: no-repeat;
     background-position: center 70%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .navbar {
@@ -80,4 +81,70 @@ body {
 
 .sidebar a:hover {
     background-color: rgba(255, 255, 255, 0.2);
+}
+.menubutton{
+    display: none;
+}
+.body-section{
+    border: 3px solid;
+    width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+.boxes{
+    border: 2px solid;
+    display: flex;
+    flex-direction: colu;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+    */
+    .box{
+        width: 30rem ;
+        height: 200px;
+        border: 3px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px;
+        
+    }
+
+    .Appointment{
+   
+    }
+@media (max-width:800px){
+    .hideOnMobile{
+     display: none;
+    }
+    .menubutton{
+        display: block;
+        background-color: black;
+
+    }  
+}
+@media(max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+    body{
+        background-size: 90%;
+        background-position: center center;
+        position: static;
+    }
+     .box1-Appointment,
+  .box2-Approve-cancel,
+  .box3-view-messages {
+    width: 90%;       /* Full width on small screens */
+    margin: 1rem;     /* Space between boxes */
+    padding: 2rem;    /* Smaller padding for small screen */
+  }
 }

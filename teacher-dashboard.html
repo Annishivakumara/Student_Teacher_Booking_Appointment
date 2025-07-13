@@ -9,7 +9,6 @@
   <body>
     <nav class="navbar">
       <ul class="sidebar">
-
         <li><a href="">
             <img  style="color: black;" src="./assets/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
         </a></li>
@@ -20,13 +19,13 @@
         <li><a href="">Home</a></li>
       </ul>
       <ul class="insideelements">
-        <li><a href="">Home</a></li>
-        <li><a href="">Home</a></li>
-        <li><a href="">Home</a></li>
-        <li><a href="">Home</a></li>
-        <li><a href="">Home</a></li>
-        <li><a href="">Home</a></li>
-        <li onclick="ShowSidebar()">
+        <li ><a href="">Home</a></li>
+        <li class="hideOnMobile"><a href="">Home</a></li>
+        <li class="hideOnMobile"><a href="">Home</a></li>
+        <li class="hideOnMobile"><a href="">Home</a></li>
+        <li class="hideOnMobile"><a href="">Home</a></li>
+        <li class="hideOnMobile"><a href="">Home</a></li>
+        <li class="menubutton" onclick="ShowSidebar()">
           <a href="#"
             ><img
               src="./assets/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"
@@ -36,6 +35,21 @@
         </li>
       </ul>
     </nav>
+    <section >
+    <div class="body-section">
+      <div class="box Appointment">
+        Round1
+      </div>
+      <div class="box Approve-cancel">
+        Round2
+      </div>
+      <div class="box view-messages">
+        Round3
+      </div>
+      <div class="box view-all-Appointments">
+        Round4
+     
+    </section>
     <script src="./js/teacherDashBoard.js"></script>
   </body>
 </html>
