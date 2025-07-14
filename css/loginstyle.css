@@ -96,3 +96,76 @@ color: orange;
   width: calc(100% - 40px);
 }
 /* ...existing code... */
+
+/* ========== LAPTOP (Default styles already optimized, but here's a tweak) ========== */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    justify-content: flex-end;
+    right: 100px;
+  }
+
+  .login-container {
+    max-width: 480px;
+    right: 100px;
+    transform: translateY(-50%);
+  }
+}
+
+/* ========== TABLET ========== */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    justify-content: center;
+    align-items: center;
+    right: 0;
+  }
+
+  .login-container {
+    max-width: 90%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    transform: translateY(-50%);
+  }
+
+  .login-btn {
+    min-width: 80%;
+  }
+}
+
+/* ========== MOBILE ========== */
+@media (max-width: 767px) {
+  body {
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+    position: static;
+  }
+
+  .login-container {
+    width: 90%;
+    min-width: unset;
+    max-width: unset;
+    position: static;
+    transform: none;
+    box-shadow: none;
+    border-radius: 0;
+    min-height: auto;
+  }
+
+  .login-form > h2 {
+    font-size: 1.5rem;
+    bottom: 20px;
+  }
+
+  .login-btn {
+    min-width: 100%;
+  }
+
+  .login-container > p {
+    position: relative;
+    bottom: unset;
+    right: unset;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
