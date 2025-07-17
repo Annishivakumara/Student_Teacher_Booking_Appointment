@@ -9,6 +9,11 @@ body {
   margin: 0; 
   position: fixed;
   right: 100px;         /* Remove margin-right for true centering */
+   background-image: url(../assets/image.jpg);
+   background-repeat: no-repeat;
+   object-fit: cover;
+  
+  
 }
 
 .login-container {
@@ -27,6 +32,7 @@ body {
   right: 100px;
   top: 50%;
   transform: translateY(-50%);
+ 
 }
 .login-form > h2{
   font-size: 2.0rem;
